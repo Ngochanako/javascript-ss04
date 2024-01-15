@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a= +prompt("Nhập vào số nguyên dương a:");
+        var b=+prompt("Nhập vào số nguyên dương b");
+        if(a==b){
+            console.log(a);
+        } else{
+            let sum_even=0;
+            let sum_odd=0;
+            if(a>b){
+                a=a+b;
+                b=a-b;
+                a=a-b;
+            }
+            for(let i=a;i<=b;i++){
+            (i%2==0) ? sum_even+=i : sum_odd+=i;
+            }
+            console.log("tổng các số chẵn: "+ sum_even)
+            console.log("tổng các số lẻ: "+ sum_odd)
+        }
+    </script>
+</body>
+</html>

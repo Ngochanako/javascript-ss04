@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=+prompt("Nhập vào số a:")
+        var b=+prompt("Nhập vào số b:")
+        var c=+prompt("Nhập vào số c:")
+        var d=+prompt("Nhập vào số d:")
+        let n= bcnn(a,b);
+        n=bcnn(n,c);
+        n=bcnn(n,d);
+        console.log(n);
+        function bcnn(a,b){
+            let n=a*b;
+            while(a!=b){
+                (a>b) ? a=a-b : b=b-a;
+            }
+            return n/a;
+        }
+    </script>
+</body>
+</html>

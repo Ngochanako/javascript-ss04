@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var width_rec=+prompt("Nhập vào chiều dài hình chữ nhật");
+        var height_rec=+prompt("Nhập vào chiều rộng hình chữ nhật");
+        console.log(findRec(width_rec,height_rec));
+        function findRec(a,b){
+            let cnt=1;
+            if(a==b) return 1;
+                while(a!=b){
+                cnt++;
+                (a>b) ? a=a-b :b=b-a;
+                }
+            return cnt;
+        }
+    </script>
+</body>
+</html>

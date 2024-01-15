@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sumx=0;
+       let n=+prompt("Nhập vào 1 số bất kỳ:");
+        for(let i=1;i<=n;i++){
+        if(sum(i)){
+            for(let j=1;j<=i;j++){
+                sumx+=j
+                console.log(j);
+            }
+            console.log("Tổng các số là: "+sumx)
+        }
+        }
+        function sum(n){
+            for(let i=1;i<=n;i++) {
+            sum+=i;
+        }
+            (sum%2==0) ? return false : return true;
+        }
+    </script>
+</body>
+</html>
